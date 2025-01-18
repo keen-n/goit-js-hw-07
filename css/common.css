@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+input {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------------------- TASK-1 -------------------------*/
+
+#categories > .item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  height: auto;
+  background-color: #f6f6fe;
+}
+
+#categories > .item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#categories > .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+#categories > .item ul {
+  padding: 0;
+}
+
+#categories > .item ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+#categories > .item ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 0 8px 16px;
+}
+
+/* ------------------------------- TASK-2 -------------------------*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.gallery li {
+  flex: 1 1 calc((100% - 2 * 24px) / 3);
+  max-width: calc((100% - 2 * 24px) / 3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+/* ------------------------------- TASK-3 -------------------------*/
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 0 8px 16px;
+  margin-bottom: 16px;
+}
+
+input:hover {
+  border-color: #000;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* ------------------------------- TASK-4 -------------------------*/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  gap: 8px;
+}
+
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.input-form {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------- TASK-5 -------------------------*/
+
+.widget > p {
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.widget > button {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+
+/* ------------------------------- TASK-6 -------------------------*/
+
+#controls {
+  background-color: #f6f6fe;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.js-input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 70px;
+  width: 150px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.js-btn-create {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-right: 16px;
+}
+.js-btn-destroy {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #ff4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  margin-right: 16px;
+  color: #fff;
+}
